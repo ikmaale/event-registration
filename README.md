@@ -43,7 +43,7 @@ recomposition, dan state hoisting.
 6. Tombol **Reset** mengosongkan semua input.
 
 ## Screenshot
-Screenshot aplikasi ada di folder `screenshots/` (form kosong, email tidak valid, dan form berhasil).
+Screenshot aplikasi ada di folder `screenshot` (form kosong, email tidak valid, dan form berhasil).
 
 ## Cara Menjalankan
 1. Clone repository ini, lalu buka di Android Studio (Koala atau lebih baru).
