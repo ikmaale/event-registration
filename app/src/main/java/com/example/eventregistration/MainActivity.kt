@@ -31,6 +31,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
+import androidx.compose.foundation.selection.toggleable
+import androidx.compose.ui.semantics.Role
 
 private const val MIN_TICKET = 1
 private const val MAX_TICKET = 5
@@ -233,7 +235,6 @@ fun LabeledSwitch(
     }
 }
 
-/** Stateless: state `checked` dimiliki parent. */
 @Composable
 fun LabeledCheckbox(
     label: String,
@@ -242,14 +243,19 @@ fun LabeledCheckbox(
     modifier: Modifier = Modifier
 ) {
     Row(
-        modifier = modifier.fillMaxWidth(),
+        modifier = modifier
+            .fillMaxWidth()
+            .toggleable(
+                value = checked,
+                role = Role.Checkbox,
+                onValueChange = onCheckedChange
+            ),
         verticalAlignment = Alignment.CenterVertically
     ) {
-        Checkbox(checked = checked, onCheckedChange = onCheckedChange)
+        Checkbox(checked = checked, onCheckedChange = null)
         Text(label)
     }
 }
-
 @Composable
 fun FeedbackMessage(
     isFormValid: Boolean,
