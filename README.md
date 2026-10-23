@@ -54,7 +54,5 @@ Screenshot aplikasi ada di folder `screenshot` (form kosong, email tidak valid, 
 ## Deklarasi Penggunaan AI
 - [x] Saya menggunakan AI generatif sebagai alat bantu.
   Tools yang digunakan: Claude (Anthropic).
-  Bagian yang dibantu AI: beberapa kode `MainActivity.kt`,rencana commit, serta panduan langkah setup Android Studio, Git, dan GitHub.
+  Bagian yang dibantu AI: beberapa kode `MainActivity.kt`,draf README, rencana commit, serta panduan langkah setup Android Studio, Git, dan GitHub.
 
-Saya menyatakan memahami seluruh kode yang saya kumpulkan dan bersedia menjelaskan atau
-memodifikasinya secara langsung.
